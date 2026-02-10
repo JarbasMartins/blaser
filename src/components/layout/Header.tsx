@@ -22,7 +22,7 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed w-full z-50 border-b-2 ${scrolled ? 'bg-green-50 text-zinc-950 border-green-950' : 'bg-transparent text-zinc-50 border-transparent'} 
+            className={`fixed w-full z-50 border-b-2 ${scrolled ? 'bg-green-50 text-zinc-950 border-zinc-950' : 'bg-transparent text-zinc-50 border-transparent'} 
             transition-colors duration-200`}
         >
             <div className="mx-auto px-4 py-2">
@@ -37,7 +37,7 @@ export default function Header() {
                         <ul className="flex items-center gap-4">
                             {navigation.map(({ label, href }) => {
                                 return (
-                                    <li key={label} className="hover:-translate-y-0.5 transition-transform duration-150">
+                                    <li key={label} className="hover:-translate-y-0.5 hover:text-green-400 transition-transform duration-150">
                                         <a href={href}>{label}</a>
                                     </li>
                                 );

@@ -13,11 +13,11 @@ export default function Contact() {
                     <div className="h-1 w-24 bg-green-400" />
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-5">
-                    <form className="flex flex-1 flex-col gap-5 bg-zinc-50 dark:bg-zinc-800 p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 shadow-xl shadow-zinc-200/50 dark:shadow-none">
+                <div className="flex flex-col lg:flex-row gap-10">
+                    <form className="flex flex-1 flex-col gap-5 bg-zinc-800 p-8 rounded-3xl border border-zinc-800">
                         <div>
-                            <h3 className="text-2xl font-bold text-zinc-900 dark:text-white">Envie uma mensagem</h3>
-                            <p className="text-zinc-500 dark:text-zinc-400 mt-2">Preencha o formulário e retornaremos em breve.</p>
+                            <h3 className="text-2xl font-bold text-white">Envie uma mensagem</h3>
+                            <p className="text-zinc-400 mt-2">Preencha o formulário e retornaremos em breve.</p>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -29,7 +29,7 @@ export default function Contact() {
 
                         <button
                             type="submit"
-                            className="group cursor-pointer relative flex items-center justify-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-semibold py-4 px-6 rounded-xl overflow-hidden transition-transform active:scale-[0.98]"
+                            className="group cursor-pointer relative flex items-center justify-center gap-2 bg-white text-white font-semibold py-4 px-6 rounded-xl overflow-hidden transition-transform active:scale-[0.98]"
                         >
                             <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1s_infinite]" />
                             <span>Enviar Mensagem</span>
