@@ -14,7 +14,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex flex-col lg:flex-row gap-10">
-                    <form className="flex flex-1 flex-col gap-5 bg-zinc-800 p-8 rounded-3xl border border-zinc-800">
+                    <form className="flex flex-1 flex-col gap-5 bg-zinc-950 p-8 rounded-3xl border border-zinc-950">
                         <div>
                             <h3 className="text-2xl font-bold text-white">Envie uma mensagem</h3>
                             <p className="text-zinc-400 mt-2">Preencha o formulário e retornaremos em breve.</p>

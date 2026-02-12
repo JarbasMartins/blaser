@@ -1,19 +1,4 @@
-import React from 'react';
-
 export default function Header() {
-    const [scrolled, setScrolled] = React.useState(false);
-
-    React.useEffect(() => {
-        const onScroll = () => {
-            const shouldBeScrolled = window.scrollY > 0;
-            setScrolled((prev) => (prev !== shouldBeScrolled ? shouldBeScrolled : prev));
-        };
-
-        onScroll();
-        window.addEventListener('scroll', onScroll, { passive: true });
-        return () => window.removeEventListener('scroll', onScroll);
-    }, []);
-
     const navigation = [
         { label: 'Sobre Nós', href: '#about' },
         { label: 'Serviços', href: '#services' },
@@ -22,8 +7,8 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed w-full z-50 border-b-2 ${scrolled ? 'bg-green-50 text-zinc-950 border-zinc-950' : 'bg-transparent text-zinc-50 border-transparent'} 
-            transition-colors duration-200`}
+            className="w-full z-50 border-b-2  text-zinc-50 border-transparent'} 
+            transition-colors duration-200"
         >
             <div className="mx-auto px-4 py-2">
                 <div className="flex items-center justify-between font-bebas">
