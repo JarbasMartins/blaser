@@ -16,8 +16,8 @@ export default function Contact() {
                 <div className="flex flex-col lg:flex-row gap-10">
                     <form className="flex flex-1 flex-col gap-5 bg-zinc-950 p-8 rounded-3xl border border-zinc-950">
                         <div>
-                            <h3 className="text-2xl font-bold text-white">Envie uma mensagem</h3>
-                            <p className="text-zinc-400 mt-2">Preencha o formulário e retornaremos em breve.</p>
+                            <h3 className="text-2xl font-bold text-white">Planeje sua aventura</h3>
+                            <p className="text-zinc-400 mt-2">Deixe seus dados e um de nossos especialistas em ecoturismo entrará em contato.</p>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -29,10 +29,9 @@ export default function Contact() {
 
                         <button
                             type="submit"
-                            className="group cursor-pointer relative flex items-center justify-center gap-2 bg-white text-white font-semibold py-4 px-6 rounded-xl overflow-hidden transition-transform active:scale-[0.98]"
+                            className="group cursor-pointer relative flex items-center justify-center gap-2 bg-green-500 text-white font-semibold py-4 px-6 rounded-xl overflow-hidden transition-transform active:scale-[0.98] hover:bg-green-600"
                         >
-                            <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1s_infinite]" />
-                            <span>Enviar Mensagem</span>
+                            <span>Solicitar Orçamento</span>
                             <Send size={18} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                         </button>
                     </form>

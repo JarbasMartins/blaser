@@ -1,5 +1,4 @@
 import DoodleSvg from '@assets/nature.svg';
-import Button from '@components/ui/Button';
 import { ArrowRight } from 'lucide-react';
 
 export default function About() {
@@ -26,17 +25,25 @@ export default function About() {
                         </h2>
                         <div className="h-1 w-24 bg-green-400 ml-0" />
                     </div>
-                    <div className="flex flex-col space-y-2 text-justify font-montserrat tracking-tighter text-[14px] md:text-base max-w-2xl">
+                    <div className="flex flex-col space-y-4 text-left font-montserrat tracking-tight text-zinc-100 text-base max-w-2xl">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates inventore aliquam error quod? Temporibus repellat voluptas voluptates
-                            deleniti. Porro quia est consectetur dolores accusamus pariatur repellendus necessitatibus vitae cupiditate.
+                            A Blaser nasceu da convicção de que a conexão humana com o ambiente natural é fundamental para o bem-estar e para a conservação do planeta. Não somos
+                            apenas uma empresa de ecoturismo; somos curadores de experiências que transformam.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius culpa veritatis corporis itaque, tempora magnam maxime, porro maiores recusandae labore
-                            provident ratione suscipit rerum molestiae similique consequatur aliquam illo nemo repudiandae quisquam omnis placeat dolor.
+                            Nossa missão é levar pessoas para o coração da natureza, promovendo não só a aventura, mas também a consciência ecológica. Cada trilha, acampamento e
+                            iniciativa de reflorestamento é um passo em direção a um futuro mais verde e sustentável.
                         </p>
                     </div>
-                    <Button label="Saiba Mais" icon={ArrowRight} className="shadow shadow-green-400" />
+                    <a
+                        href="#services"
+                        className="group inline-flex items-center gap-2 px-5 py-2.5 sm:px-7 sm:py-3
+                                       text-sm sm:text-base font-medium text-black bg-white rounded-lg
+                                       hover:bg-zinc-200 transition-all"
+                    >
+                        Conheça Nossos Serviços
+                        <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                    </a>
                 </div>
                 <div className="flex-1 flex items-center justify-center">
                     <img src={DoodleSvg} alt="Ilustração de um avatar sentado na grama." />
